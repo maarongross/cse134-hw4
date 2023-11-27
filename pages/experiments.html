@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Experiments</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+      h1 {color:blue;}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Experiments</h1>
+      <a href="/index.html">Back to Main Page</a>
+    </header>
+    <main>
+      <h2>This is an exercise in fitting as many miscellaneous html tags on this page as possible</h2>
+      <canvas id="myCanvas"></canvas>
+      <script>
+        let i = document.getElementById("myCanvas");
+        let context = i.getContext("2d");
+        context.fillStyle = "#0F0F0F";
+        context.fillRect(0, 0, 80, 80);
+      </script>
+      <code>this is code.</code>
+      <pre>this text is <span style="color:yellow">in</span> a          pre element.</pre>
+      <hr>
+      <p>hello i am a <svg width="400" height="100"></svg> sentence.</p>
+      <ol>
+        <li>random list element</li>
+      </ol>
+      <label for="people">Choose some people</label>
+      <select name="people" id="people">
+        <optgroup label="Cool People">
+          <option value="me">Me</option>
+          <option value="myself">Myself</option>
+          <option value="i">I</option>
+        </optgroup>
+        <optgroup label="Not so Cool People">
+          <option value="you">You</option>
+        </optgroup>
+      </select>
+      <form>
+        <input list="things" name="thing" id="thing">
+        <datalist id="things">
+          <option value="A"></option>
+          <option value="B"></option>
+        </datalist>
+      </form>
+      <template>
+        <p>this will be hidden for now</p>
+      </template>
+      <table>
+        <caption>Stocks and Revenue</caption>
+        <colgroup>
+          <col style="background-color: aqua;">
+          <col style="background-color: green;">
+        </colgroup>
+        <tr>
+          <th>Stocks</th>
+          <th>Revenue</th>
+        </tr>
+        <tr>
+          <td>10000</td>
+          <td>$1 billion</td>
+        </tr>
+      </table>
+      <figure>
+        <img src="/images/windows.jpg" alt="Windows Background" style="width:100%">
+        <figcaption>The Windows XP Background</figcaption>
+      </figure>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 1.5dvw;
+    }
+
+    a {
+        font-size: 1.4dvw;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 1023px) {
+    h1 {
+        font-size: 3dvw;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 5dvw;
+    }
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("/fonts/BebasNeue-Regular.ttf");
+}
+
+:root {
+    --my-blue: #123875;
+    --beige-white: #ebe8e1;
+}
+
+body {
+    margin: 0;
+    margin-top: -5dvw; /* fixes white space on top of screen */
+    padding: 0;
+}
+
+header {
+    background-color: var(--my-blue, royalblue);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1dvw;
+    padding-right: 1dvw;
+    /* for making header move with scroll */
+    top: 0;
+    position: sticky;
+    z-index: 3;
+}
+
+h1 {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+}
+
+a {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    padding-left: 4px;
+    padding-right: 4px;
+    transition: all .1s ease-in;
+}
+
+a:hover {
+    color: var(--my-blue, royalblue);
+    background-color: white;
+}
+
+#introduction {
+    padding-top: 5dvw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+picture > img{
+    max-width: 25%;
+}

@@ -19,22 +19,22 @@
           <legend>Send me a message!</legend>
 
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required><br><br>
+          <input type="text" id="name" name="name" required pattern="[A-Za-z][A-Za-z\s]*[A-Za-z]"><br><br>
           <output name="error-message" for="name"></output>
           <output name="info-message" for="name"></output>
 
           <label for="email">E-mail:</label>
-          <input type="text" id="email" name="email" required><br><br>
+          <input type="email" id="email" name="email" required><br><br>
           <output name="error-message" for="email"></output>
           <output name="info-message" for="email"></output>
 
           <label for="usermsg">Comments:</label>
-          <textarea id="usermsg" name="usermsg" required></textarea><br><br>
+          <textarea id="usermsg" name="usermsg" required maxlength="300"></textarea><br><br>
           <output name="error-message" for="usermsg"></output>
           <output name="info-message" for="usermsg"></output>
 
           <input type="hidden" name="possible_bot" value="true">
-          
+
           <button type="submit">Submit</button>
         </fieldset>
       </form>

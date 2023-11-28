@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Me!</title>
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/contact.css">
   </head>
   <body>
     <header>
@@ -13,18 +14,28 @@
         <a href="/index.html">Back to Main Page</a>
     </header>
     <main>
-      <form>
+      <form action="https://httpbin.org/post" method="POST">
         <fieldset>
           <legend>Send me a message!</legend>
+
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name"><br><br>
-          <label for="number">Phone Number:</label>
-          <input type="text" id="number" name="number"><br><br>
+          <input type="text" id="name" name="name" required><br><br>
+          <output name="error-message" for="name"></output>
+          <output name="info-message" for="name"></output>
+
           <label for="email">E-mail:</label>
-          <input type="text" id="email" name="email"><br><br>
-          <label for="usermsg">Message:</label>
-          <textarea id="usermsg" name="usermsg"></textarea><br><br>
-          <button type="button">Submit</button>
+          <input type="text" id="email" name="email" required><br><br>
+          <output name="error-message" for="email"></output>
+          <output name="info-message" for="email"></output>
+
+          <label for="usermsg">Comments:</label>
+          <textarea id="usermsg" name="usermsg" required></textarea><br><br>
+          <output name="error-message" for="usermsg"></output>
+          <output name="info-message" for="usermsg"></output>
+
+          <input type="hidden" name="possible_bot" value="true">
+          
+          <button type="submit">Submit</button>
         </fieldset>
       </form>
     </main>

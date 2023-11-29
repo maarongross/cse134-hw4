@@ -7,7 +7,7 @@
     <title>Contact Me!</title>
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/styles/contact.css">
-    <script src="scripts/forms.js"></script>
+    <script defer src="/scripts/forms.js"></script>
   </head>
   <body>
     <header>
@@ -23,16 +23,19 @@
           <input type="text" id="name" name="name" required pattern="[A-Za-z][A-Za-z\s]*[A-Za-z]"><br><br>
           <output name="error-message" for="name"></output>
           <output name="info-message" for="name"></output>
+          <br>
 
           <label for="email">E-mail:</label>
           <input type="email" id="email" name="email" required><br><br>
           <output name="error-message" for="email"></output>
           <output name="info-message" for="email"></output>
+          <br>
 
           <label for="usermsg">Comments:</label>
           <textarea id="usermsg" name="usermsg" required maxlength="300"></textarea><br><br>
           <output name="error-message" for="usermsg"></output>
           <output name="info-message" for="usermsg"></output>
+          <br>
 
           <input type="hidden" name="possible_bot" value="true">
 
